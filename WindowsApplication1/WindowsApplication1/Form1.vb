@@ -55,6 +55,11 @@
 
     End Sub
 
+    Private Sub frmlogin_FormClosing(sender As Object, e As FormClosingEventArgs) Handles Me.FormClosing
+        End
+
+    End Sub
+
     Private Sub frmlogin_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 
 

@@ -5,84 +5,52 @@ Public Class frmconsulta
     Dim Datos As New DataSet
     Dim Adaptador As New SqlDataAdapter
     Dim BsAlumnos As New BindingSource
-    Dim source1 As New BindingSource()
+
+    Private Sub frmconsulta_FormClosing(sender As Object, e As FormClosingEventArgs) Handles Me.FormClosing
+
+        Me.Dispose()
+
+
+
+    End Sub
+
 
 
 
     Private Sub Form3_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 
         conexion.ConnectionString = Url
-        ' Dim ds As DataSet = New DataSet
         Try
+            conexion.Open()
+            Comando.CommandText = "select * from ALUMNOS"
+            Comando.Connection = conexion
 
-            'conexion.ConnectionString = Url
-            'conexion.Open()
-            ''  Comando.CommandText = "select * from ALUMNOS"
-            '' Comando.CommandText = "use sistec"
-            'Comando.CommandText = "select * from ALUMNOS"
-            'Comando.Connection = conexion
-            'BsAlumnos.DataSource = Comando.ExecuteReader()
-            'dgv.DataSource = BsAlumnos
-
-            Datos = New DataSet
-            Dim tables As DataTableCollection = Datos.Tables
-            ' provider = "Provider=Microsoft.ACE.OLEDB.12.0;Data Source ="
-            ' dataFile = "C:\Users\Jimmy\Documents\Merchandise.accdb" ' change to access database location on your computer
-            ' connString = provider & dataFile
-            ' myConnection.ConnectionString = connString
-            Adaptador = New SqlDataAdapter("select * from ALUMNOS", conexion)
-            '  da = New OleDbDataAdapter("Select [Item Code], [Description], [Price] from items", myConnection)
+            Adaptador.SelectCommand = Comando
             Adaptador.Fill(Datos, "ALUMNOS")
-            'da.Fill(ds, "Items")
-            ' replace "items" with the name of the table
-            ' replace [Item Code], [Description], [Price] with the columns headers
-            Dim view1 As New DataView(tables(0))
 
-            source1.DataSource = view1
-            dgv.DataSource = view1
-            dgv.Refresh()
-            ' DataGridView1.DataSource = view1
-            ' DataGridView1.Refresh()
+            'Adaptador.SelectCommand.CommandText = "select*from ciudades"
+            'Adaptador.Fill(Datos, "otro")
 
 
+            BsAlumnos.DataSource = Datos
+            BsAlumnos.DataMember = "ALUMNOS"
+            dgv.DataSource = BsAlumnos
 
 
+            Txtnc.DataBindings.Add("text", BsAlumnos, "CONTROL")
+            Txtnombre.DataBindings.Add("text", BsAlumnos, "NOMBRE")
 
-
-
-
-
-        Catch ex As Exception
-            MsgBox(ex.Message)
-
-        Finally
 
             conexion.Close()
-
+        Catch ex As Exception
+            MsgBox(ex.Message)
 
         End Try
 
 
 
-        Try
-            conexion.ConnectionString = Url
-            Dim strsql As String
-            'Listar los registros
-            strsql = "Select * from ALUMNOS"
 
-            Dim daEmp As New SqlClient.SqlDataAdapter(strsql, conexion)
-            Dim dtEmp As New DataTable
-            daEmp.Fill(dtEmp)
-            '  Adaptador.Fill(dtEmp)
-            Dgv2.DataSource = dtEmp
-        Catch ex As Exception
-            MsgBox(ex.Message)
-
-        Finally
-
-            conexion.Close()
-
-        End Try
+       
 
 
 
@@ -114,23 +82,21 @@ Public Class frmconsulta
     End Sub
 
     Private Sub txtconsulta_TextChanged(sender As Object, e As EventArgs) Handles txtconsulta.TextChanged
-        dgv.DataSource = BsAlumnos
+        '   dgv.DataSource = BsAlumnos
         ' Dim cadena As String
         Try
            
 
-
-
-
-
-
-
             If rbcontrol.Checked = True Then
 
 
-                BsAlumnos.Filter = "    NOMBRE like '" & txtconsulta.Text & "%' "
-                '  DataGridView1.Refresh()
-                dgv.Refresh()
+                BsAlumnos.Filter = "CONTROL like '" & txtconsulta.Text & "%' "
+
+            ElseIf rbNombre.Checked Then
+                BsAlumnos.Filter = "NOMBRE like '" & txtconsulta.Text & "%'"
+
+            Else
+                BsAlumnos.Filter = "DOMICILIO like '" & txtconsulta.Text & "%'"
             End If
 
 
@@ -153,22 +119,63 @@ Public Class frmconsulta
         lblbuspersonal.Text = rbDom.Text()
     End Sub
 
-    Private Sub btnfiltrar_Click(sender As Object, e As EventArgs) Handles btnfiltrar.Click
+    
+    Private Sub Txtnc_TextChanged(sender As Object, e As EventArgs) Handles Txtnc.TextChanged
 
+    End Sub
 
-        BsAlumnos.Filter = "    NOMBRE like '" & txtconsulta.Text & "%' "
-        '  DataGridView1.Refresh()
-        dgv.Refresh()
+    Private Sub btnfirst_Click(sender As Object, e As EventArgs) Handles btnfirst.Click
+        BsAlumnos.MoveFirst()
 
+    End Sub
 
-        source1.Filter = "    NOMBRE like '" & txtconsulta.Text & "%' "
-        dgv.Refresh()
+    Private Sub btnnext_Click(sender As Object, e As EventArgs) Handles btnnext.Click
+        BsAlumnos.MoveNext()
+    End Sub
 
+    Private Sub btnlast_Click(sender As Object, e As EventArgs) Handles btnlast.Click
+        BsAlumnos.MoveLast()
+    End Sub
 
+    Private Sub btnprevius_Click(sender As Object, e As EventArgs) Handles btnprevius.Click
+        BsAlumnos.MovePrevious()
+    End Sub
 
+    Private Sub Button2_Click(sender As Object, e As EventArgs) Handles btnnuevo.Click
+        BsAlumnos.AddNew()
+    End Sub
 
+    Private Sub btncancelar_Click(sender As Object, e As EventArgs) Handles btncancelar.Click
+        Try
+            BsAlumnos.CancelEdit()
+        Catch ex As Exception
+            MsgBox(ex.Message)
+        End Try
 
+    End Sub
 
+    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles btnGuardar.Click
+        Dim insertar As New SqlCommand
+        Dim conexion2 As New SqlConnection
+        Dim cadenita As String
+        Try
+            conexion2.ConnectionString = Url
+            conexion2.Open()
+            insertar.Connection = conexion2
+            cadenita = "insert into ALUMNOS (CONTROL,NOMBRE) values('" &
+                Txtnc.Text & "'" & ",'" & Txtnombre.Text & "')"
+            MsgBox(cadenita)
+            insertar.CommandText = cadenita
+            insertar.ExecuteNonQuery()
+
+            conexion2.Close()
+            BsAlumnos.EndEdit()
+        Catch ex As Exception
+            MsgBox(ex.Message)
+        End Try
+    End Sub
+
+    Private Sub btnBorrar_Click(sender As Object, e As EventArgs) Handles btnBorrar.Click
 
     End Sub
 End Class

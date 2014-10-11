@@ -28,31 +28,38 @@ Partial Class frmconsulta
         Me.rbNombre = New System.Windows.Forms.RadioButton()
         Me.rbDom = New System.Windows.Forms.RadioButton()
         Me.lblbuspersonal = New System.Windows.Forms.Label()
-        Me.Dgv2 = New System.Windows.Forms.DataGridView()
-        Me.btnfiltrar = New System.Windows.Forms.Button()
+        Me.Txtnc = New System.Windows.Forms.TextBox()
+        Me.Txtnombre = New System.Windows.Forms.TextBox()
+        Me.btnfirst = New System.Windows.Forms.Button()
+        Me.btnlast = New System.Windows.Forms.Button()
+        Me.btnnext = New System.Windows.Forms.Button()
+        Me.btnprevius = New System.Windows.Forms.Button()
+        Me.btncancelar = New System.Windows.Forms.Button()
+        Me.btnnuevo = New System.Windows.Forms.Button()
+        Me.btnGuardar = New System.Windows.Forms.Button()
+        Me.btnBorrar = New System.Windows.Forms.Button()
         CType(Me.dgv, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.Dgv2, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'dgv
         '
         Me.dgv.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.dgv.Location = New System.Drawing.Point(12, 200)
+        Me.dgv.Location = New System.Drawing.Point(12, 180)
         Me.dgv.Name = "dgv"
-        Me.dgv.Size = New System.Drawing.Size(309, 150)
+        Me.dgv.Size = New System.Drawing.Size(702, 192)
         Me.dgv.TabIndex = 0
         '
         'txtconsulta
         '
-        Me.txtconsulta.Location = New System.Drawing.Point(300, 155)
+        Me.txtconsulta.Location = New System.Drawing.Point(61, 151)
         Me.txtconsulta.Name = "txtconsulta"
-        Me.txtconsulta.Size = New System.Drawing.Size(198, 20)
+        Me.txtconsulta.Size = New System.Drawing.Size(272, 20)
         Me.txtconsulta.TabIndex = 1
         '
         'rbcontrol
         '
         Me.rbcontrol.AutoSize = True
-        Me.rbcontrol.Location = New System.Drawing.Point(91, 35)
+        Me.rbcontrol.Location = New System.Drawing.Point(12, 18)
         Me.rbcontrol.Name = "rbcontrol"
         Me.rbcontrol.Size = New System.Drawing.Size(58, 17)
         Me.rbcontrol.TabIndex = 2
@@ -63,7 +70,7 @@ Partial Class frmconsulta
         'rbNombre
         '
         Me.rbNombre.AutoSize = True
-        Me.rbNombre.Location = New System.Drawing.Point(91, 72)
+        Me.rbNombre.Location = New System.Drawing.Point(12, 47)
         Me.rbNombre.Name = "rbNombre"
         Me.rbNombre.Size = New System.Drawing.Size(62, 17)
         Me.rbNombre.TabIndex = 3
@@ -74,7 +81,7 @@ Partial Class frmconsulta
         'rbDom
         '
         Me.rbDom.AutoSize = True
-        Me.rbDom.Location = New System.Drawing.Point(91, 109)
+        Me.rbDom.Location = New System.Drawing.Point(12, 76)
         Me.rbDom.Name = "rbDom"
         Me.rbDom.Size = New System.Drawing.Size(65, 17)
         Me.rbDom.TabIndex = 4
@@ -85,36 +92,113 @@ Partial Class frmconsulta
         'lblbuspersonal
         '
         Me.lblbuspersonal.AutoSize = True
-        Me.lblbuspersonal.Location = New System.Drawing.Point(225, 161)
+        Me.lblbuspersonal.Location = New System.Drawing.Point(9, 151)
         Me.lblbuspersonal.Name = "lblbuspersonal"
         Me.lblbuspersonal.Size = New System.Drawing.Size(44, 13)
         Me.lblbuspersonal.TabIndex = 5
         Me.lblbuspersonal.Text = "Nombre"
         '
-        'Dgv2
+        'Txtnc
         '
-        Me.Dgv2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.Dgv2.Location = New System.Drawing.Point(348, 200)
-        Me.Dgv2.Name = "Dgv2"
-        Me.Dgv2.Size = New System.Drawing.Size(336, 149)
-        Me.Dgv2.TabIndex = 6
+        Me.Txtnc.Location = New System.Drawing.Point(291, 12)
+        Me.Txtnc.Name = "Txtnc"
+        Me.Txtnc.Size = New System.Drawing.Size(284, 20)
+        Me.Txtnc.TabIndex = 6
         '
-        'btnfiltrar
+        'Txtnombre
         '
-        Me.btnfiltrar.Location = New System.Drawing.Point(554, 109)
-        Me.btnfiltrar.Name = "btnfiltrar"
-        Me.btnfiltrar.Size = New System.Drawing.Size(75, 23)
-        Me.btnfiltrar.TabIndex = 7
-        Me.btnfiltrar.Text = "filtrar"
-        Me.btnfiltrar.UseVisualStyleBackColor = True
+        Me.Txtnombre.Location = New System.Drawing.Point(291, 38)
+        Me.Txtnombre.Name = "Txtnombre"
+        Me.Txtnombre.Size = New System.Drawing.Size(283, 20)
+        Me.Txtnombre.TabIndex = 7
+        '
+        'btnfirst
+        '
+        Me.btnfirst.Location = New System.Drawing.Point(385, 151)
+        Me.btnfirst.Name = "btnfirst"
+        Me.btnfirst.Size = New System.Drawing.Size(75, 23)
+        Me.btnfirst.TabIndex = 8
+        Me.btnfirst.Text = "primero"
+        Me.btnfirst.UseVisualStyleBackColor = True
+        '
+        'btnlast
+        '
+        Me.btnlast.Location = New System.Drawing.Point(466, 151)
+        Me.btnlast.Name = "btnlast"
+        Me.btnlast.Size = New System.Drawing.Size(75, 23)
+        Me.btnlast.TabIndex = 9
+        Me.btnlast.Text = "ultimo"
+        Me.btnlast.UseVisualStyleBackColor = True
+        '
+        'btnnext
+        '
+        Me.btnnext.Location = New System.Drawing.Point(547, 151)
+        Me.btnnext.Name = "btnnext"
+        Me.btnnext.Size = New System.Drawing.Size(75, 23)
+        Me.btnnext.TabIndex = 10
+        Me.btnnext.Text = "siguiente"
+        Me.btnnext.UseVisualStyleBackColor = True
+        '
+        'btnprevius
+        '
+        Me.btnprevius.Location = New System.Drawing.Point(628, 151)
+        Me.btnprevius.Name = "btnprevius"
+        Me.btnprevius.Size = New System.Drawing.Size(75, 23)
+        Me.btnprevius.TabIndex = 11
+        Me.btnprevius.Text = "antes"
+        Me.btnprevius.UseVisualStyleBackColor = True
+        '
+        'btncancelar
+        '
+        Me.btncancelar.Location = New System.Drawing.Point(628, 105)
+        Me.btncancelar.Name = "btncancelar"
+        Me.btncancelar.Size = New System.Drawing.Size(75, 23)
+        Me.btncancelar.TabIndex = 12
+        Me.btncancelar.Text = "Cancelar"
+        Me.btncancelar.UseVisualStyleBackColor = True
+        '
+        'btnnuevo
+        '
+        Me.btnnuevo.Location = New System.Drawing.Point(628, 12)
+        Me.btnnuevo.Name = "btnnuevo"
+        Me.btnnuevo.Size = New System.Drawing.Size(75, 23)
+        Me.btnnuevo.TabIndex = 13
+        Me.btnnuevo.Text = "Nuevo"
+        Me.btnnuevo.UseVisualStyleBackColor = True
+        '
+        'btnGuardar
+        '
+        Me.btnGuardar.Location = New System.Drawing.Point(628, 44)
+        Me.btnGuardar.Name = "btnGuardar"
+        Me.btnGuardar.Size = New System.Drawing.Size(75, 23)
+        Me.btnGuardar.TabIndex = 14
+        Me.btnGuardar.Text = "Guardar"
+        Me.btnGuardar.UseVisualStyleBackColor = True
+        '
+        'btnBorrar
+        '
+        Me.btnBorrar.Location = New System.Drawing.Point(628, 76)
+        Me.btnBorrar.Name = "btnBorrar"
+        Me.btnBorrar.Size = New System.Drawing.Size(75, 23)
+        Me.btnBorrar.TabIndex = 15
+        Me.btnBorrar.Text = "Borrar"
+        Me.btnBorrar.UseVisualStyleBackColor = True
         '
         'frmconsulta
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(726, 378)
-        Me.Controls.Add(Me.btnfiltrar)
-        Me.Controls.Add(Me.Dgv2)
+        Me.ClientSize = New System.Drawing.Size(726, 385)
+        Me.Controls.Add(Me.btnBorrar)
+        Me.Controls.Add(Me.btnGuardar)
+        Me.Controls.Add(Me.btnnuevo)
+        Me.Controls.Add(Me.btncancelar)
+        Me.Controls.Add(Me.btnprevius)
+        Me.Controls.Add(Me.btnnext)
+        Me.Controls.Add(Me.btnlast)
+        Me.Controls.Add(Me.btnfirst)
+        Me.Controls.Add(Me.Txtnombre)
+        Me.Controls.Add(Me.Txtnc)
         Me.Controls.Add(Me.lblbuspersonal)
         Me.Controls.Add(Me.rbDom)
         Me.Controls.Add(Me.rbNombre)
@@ -124,7 +208,6 @@ Partial Class frmconsulta
         Me.Name = "frmconsulta"
         Me.Text = "consulta"
         CType(Me.dgv, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.Dgv2, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -135,6 +218,14 @@ Partial Class frmconsulta
     Friend WithEvents rbNombre As System.Windows.Forms.RadioButton
     Friend WithEvents rbDom As System.Windows.Forms.RadioButton
     Friend WithEvents lblbuspersonal As System.Windows.Forms.Label
-    Friend WithEvents Dgv2 As System.Windows.Forms.DataGridView
-    Friend WithEvents btnfiltrar As System.Windows.Forms.Button
+    Friend WithEvents Txtnc As System.Windows.Forms.TextBox
+    Friend WithEvents Txtnombre As System.Windows.Forms.TextBox
+    Friend WithEvents btnfirst As System.Windows.Forms.Button
+    Friend WithEvents btnlast As System.Windows.Forms.Button
+    Friend WithEvents btnnext As System.Windows.Forms.Button
+    Friend WithEvents btnprevius As System.Windows.Forms.Button
+    Friend WithEvents btncancelar As System.Windows.Forms.Button
+    Friend WithEvents btnnuevo As System.Windows.Forms.Button
+    Friend WithEvents btnGuardar As System.Windows.Forms.Button
+    Friend WithEvents btnBorrar As System.Windows.Forms.Button
 End Class

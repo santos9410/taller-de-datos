@@ -21,7 +21,7 @@
 
     End Sub
 
-    Private Sub ConsultaToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles ConsultaToolStripMenuItem.Click
+    Private Sub ConsultaToolStripMenuItem_Click(sender As Object, e As EventArgs)
 
         frmconsulta.Show()
 
@@ -36,5 +36,23 @@
 
     Private Sub SalirToolStripMenuItem1_Click(sender As Object, e As EventArgs) Handles SalirToolStripMenuItem1.Click
         End
+    End Sub
+
+    Private Sub RegistoToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles RegistoToolStripMenuItem.Click
+
+    End Sub
+
+    Private Sub NuevoToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles NuevoToolStripMenuItem.Click
+
+
+        frmconsulta.Show()
+    End Sub
+
+    Private Sub RegistrToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles RegistrToolStripMenuItem.Click
+
+        frmRegistroA.Show()
+
+
+
     End Sub
 End Class

@@ -10,3 +10,4 @@ c:\users\santos\documents\visual studio 2012\Projects\WindowsApplication1\Window
 c:\users\santos\documents\visual studio 2012\Projects\WindowsApplication1\WindowsApplication1\obj\Debug\WindowsApplication1.frmmenu.resources
 c:\users\santos\documents\visual studio 2012\Projects\WindowsApplication1\WindowsApplication1\obj\Debug\WindowsApplication1.frmconsulta.resources
 C:\Users\santos\Documents\Visual Studio 2012\Projects\WindowsApplication1\WindowsApplication1\obj\Debug\WindowsApplication1.frmlogin.resources
+C:\Users\santos\Documents\Visual Studio 2012\Projects\WindowsApplication1\WindowsApplication1\obj\Debug\WindowsApplication1.frmRegistroA.resources
