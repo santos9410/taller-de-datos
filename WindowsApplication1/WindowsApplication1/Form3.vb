@@ -2,6 +2,7 @@
 Public Class frmconsulta
     ' Dim conexion As New SqlConnection
     Dim Comando As New SqlCommand
+    Dim conexion As New SqlConnection
     Dim Datos As New DataSet
     Dim Adaptador As New SqlDataAdapter
     Dim BsAlumnos As New BindingSource

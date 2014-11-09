@@ -1,6 +1,6 @@
 ﻿Public Class frmlogin
 
-    ' Dim conexion As New SqlClient.SqlConnection
+    Dim conexion As New SqlClient.SqlConnection
 
 
 
@@ -15,10 +15,10 @@
 
 
 
-        '    Dim cn As New SqlClient.SqlConnection("Server=.; DataBase=taller; uid=sa; pwd=sistemas")
-        ' cadena = "Server=.; DataBase=taller; uid=" & log & "; pwd=" & pass & ";"
-        ' Url = "Server=.; DataBase=sistec; uid=" & log & "; pwd=" & pass & ";"
-        Url = "Server=.; DataBase=sistec; uid=sa; pwd=sistemas;"
+        '  Dim cn As New SqlClient.SqlConnection("Server=.; DataBase=taller; uid=sa; pwd=sistemas")
+        '   cadena = "Server=.; DataBase=taller; uid=" & log & "; pwd=" & pass & ";"
+        Url = "Server=.; DataBase=sistec; uid=" & log & "; pwd=" & pass & ";"
+        ' Url = "Server=.; DataBase=sistec; uid=sa; pwd=sistemas;"
         conexion.ConnectionString = Url
 
         Try

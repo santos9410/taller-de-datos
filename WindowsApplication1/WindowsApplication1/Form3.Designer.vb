@@ -38,6 +38,9 @@ Partial Class frmconsulta
         Me.btnnuevo = New System.Windows.Forms.Button()
         Me.btnGuardar = New System.Windows.Forms.Button()
         Me.btnBorrar = New System.Windows.Forms.Button()
+        Me.Label1 = New System.Windows.Forms.Label()
+        Me.Label2 = New System.Windows.Forms.Label()
+        Me.Label3 = New System.Windows.Forms.Label()
         CType(Me.dgv, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -59,7 +62,7 @@ Partial Class frmconsulta
         'rbcontrol
         '
         Me.rbcontrol.AutoSize = True
-        Me.rbcontrol.Location = New System.Drawing.Point(12, 18)
+        Me.rbcontrol.Location = New System.Drawing.Point(62, 84)
         Me.rbcontrol.Name = "rbcontrol"
         Me.rbcontrol.Size = New System.Drawing.Size(58, 17)
         Me.rbcontrol.TabIndex = 2
@@ -70,7 +73,7 @@ Partial Class frmconsulta
         'rbNombre
         '
         Me.rbNombre.AutoSize = True
-        Me.rbNombre.Location = New System.Drawing.Point(12, 47)
+        Me.rbNombre.Location = New System.Drawing.Point(62, 38)
         Me.rbNombre.Name = "rbNombre"
         Me.rbNombre.Size = New System.Drawing.Size(62, 17)
         Me.rbNombre.TabIndex = 3
@@ -81,12 +84,12 @@ Partial Class frmconsulta
         'rbDom
         '
         Me.rbDom.AutoSize = True
-        Me.rbDom.Location = New System.Drawing.Point(12, 76)
+        Me.rbDom.Location = New System.Drawing.Point(61, 61)
         Me.rbDom.Name = "rbDom"
-        Me.rbDom.Size = New System.Drawing.Size(65, 17)
+        Me.rbDom.Size = New System.Drawing.Size(67, 17)
         Me.rbDom.TabIndex = 4
         Me.rbDom.TabStop = True
-        Me.rbDom.Text = "domicilio"
+        Me.rbDom.Text = "Domicilio"
         Me.rbDom.UseVisualStyleBackColor = True
         '
         'lblbuspersonal
@@ -100,14 +103,14 @@ Partial Class frmconsulta
         '
         'Txtnc
         '
-        Me.Txtnc.Location = New System.Drawing.Point(291, 12)
+        Me.Txtnc.Location = New System.Drawing.Point(292, 81)
         Me.Txtnc.Name = "Txtnc"
         Me.Txtnc.Size = New System.Drawing.Size(284, 20)
         Me.Txtnc.TabIndex = 6
         '
         'Txtnombre
         '
-        Me.Txtnombre.Location = New System.Drawing.Point(291, 38)
+        Me.Txtnombre.Location = New System.Drawing.Point(292, 47)
         Me.Txtnombre.Name = "Txtnombre"
         Me.Txtnombre.Size = New System.Drawing.Size(283, 20)
         Me.Txtnombre.TabIndex = 7
@@ -118,7 +121,7 @@ Partial Class frmconsulta
         Me.btnfirst.Name = "btnfirst"
         Me.btnfirst.Size = New System.Drawing.Size(75, 23)
         Me.btnfirst.TabIndex = 8
-        Me.btnfirst.Text = "primero"
+        Me.btnfirst.Text = "Primero"
         Me.btnfirst.UseVisualStyleBackColor = True
         '
         'btnlast
@@ -127,7 +130,7 @@ Partial Class frmconsulta
         Me.btnlast.Name = "btnlast"
         Me.btnlast.Size = New System.Drawing.Size(75, 23)
         Me.btnlast.TabIndex = 9
-        Me.btnlast.Text = "ultimo"
+        Me.btnlast.Text = "Último"
         Me.btnlast.UseVisualStyleBackColor = True
         '
         'btnnext
@@ -136,7 +139,7 @@ Partial Class frmconsulta
         Me.btnnext.Name = "btnnext"
         Me.btnnext.Size = New System.Drawing.Size(75, 23)
         Me.btnnext.TabIndex = 10
-        Me.btnnext.Text = "siguiente"
+        Me.btnnext.Text = "Siguiente"
         Me.btnnext.UseVisualStyleBackColor = True
         '
         'btnprevius
@@ -145,7 +148,7 @@ Partial Class frmconsulta
         Me.btnprevius.Name = "btnprevius"
         Me.btnprevius.Size = New System.Drawing.Size(75, 23)
         Me.btnprevius.TabIndex = 11
-        Me.btnprevius.Text = "antes"
+        Me.btnprevius.Text = "Antes"
         Me.btnprevius.UseVisualStyleBackColor = True
         '
         'btncancelar
@@ -184,11 +187,41 @@ Partial Class frmconsulta
         Me.btnBorrar.Text = "Borrar"
         Me.btnBorrar.UseVisualStyleBackColor = True
         '
+        'Label1
+        '
+        Me.Label1.AutoSize = True
+        Me.Label1.Location = New System.Drawing.Point(40, 17)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(80, 13)
+        Me.Label1.TabIndex = 16
+        Me.Label1.Text = "BUSCAR POR:"
+        '
+        'Label2
+        '
+        Me.Label2.AutoSize = True
+        Me.Label2.Location = New System.Drawing.Point(223, 84)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(60, 13)
+        Me.Label2.TabIndex = 17
+        Me.Label2.Text = "No. Control"
+        '
+        'Label3
+        '
+        Me.Label3.AutoSize = True
+        Me.Label3.Location = New System.Drawing.Point(223, 50)
+        Me.Label3.Name = "Label3"
+        Me.Label3.Size = New System.Drawing.Size(47, 13)
+        Me.Label3.TabIndex = 18
+        Me.Label3.Text = "Nombre:"
+        '
         'frmconsulta
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(726, 385)
+        Me.Controls.Add(Me.Label3)
+        Me.Controls.Add(Me.Label2)
+        Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.btnBorrar)
         Me.Controls.Add(Me.btnGuardar)
         Me.Controls.Add(Me.btnnuevo)
@@ -206,7 +239,7 @@ Partial Class frmconsulta
         Me.Controls.Add(Me.txtconsulta)
         Me.Controls.Add(Me.dgv)
         Me.Name = "frmconsulta"
-        Me.Text = "consulta"
+        Me.Text = "Consulta"
         CType(Me.dgv, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
@@ -228,4 +261,7 @@ Partial Class frmconsulta
     Friend WithEvents btnnuevo As System.Windows.Forms.Button
     Friend WithEvents btnGuardar As System.Windows.Forms.Button
     Friend WithEvents btnBorrar As System.Windows.Forms.Button
+    Friend WithEvents Label1 As System.Windows.Forms.Label
+    Friend WithEvents Label2 As System.Windows.Forms.Label
+    Friend WithEvents Label3 As System.Windows.Forms.Label
 End Class

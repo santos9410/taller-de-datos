@@ -32,7 +32,7 @@ Partial Class frmlogin
         '
         'btnaceptar
         '
-        Me.btnaceptar.Location = New System.Drawing.Point(197, 324)
+        Me.btnaceptar.Location = New System.Drawing.Point(72, 324)
         Me.btnaceptar.Name = "btnaceptar"
         Me.btnaceptar.Size = New System.Drawing.Size(75, 23)
         Me.btnaceptar.TabIndex = 0
@@ -41,7 +41,7 @@ Partial Class frmlogin
         '
         'Button2
         '
-        Me.Button2.Location = New System.Drawing.Point(307, 324)
+        Me.Button2.Location = New System.Drawing.Point(286, 324)
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(75, 23)
         Me.Button2.TabIndex = 1
@@ -51,33 +51,33 @@ Partial Class frmlogin
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(44, 42)
+        Me.Label1.Location = New System.Drawing.Point(69, 45)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(29, 13)
+        Me.Label1.Size = New System.Drawing.Size(46, 13)
         Me.Label1.TabIndex = 2
-        Me.Label1.Text = "User"
+        Me.Label1.Text = "Usuario:"
         '
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(47, 106)
+        Me.Label2.Location = New System.Drawing.Point(69, 109)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(52, 13)
+        Me.Label2.Size = New System.Drawing.Size(64, 13)
         Me.Label2.TabIndex = 3
-        Me.Label2.Text = "password"
+        Me.Label2.Text = "Contraseña:"
         '
         'txtuser
         '
-        Me.txtuser.Location = New System.Drawing.Point(197, 42)
+        Me.txtuser.Location = New System.Drawing.Point(176, 42)
         Me.txtuser.Name = "txtuser"
-        Me.txtuser.Size = New System.Drawing.Size(100, 20)
+        Me.txtuser.Size = New System.Drawing.Size(185, 20)
         Me.txtuser.TabIndex = 4
         '
         'txtpass
         '
-        Me.txtpass.Location = New System.Drawing.Point(197, 106)
+        Me.txtpass.Location = New System.Drawing.Point(176, 106)
         Me.txtpass.Name = "txtpass"
-        Me.txtpass.Size = New System.Drawing.Size(100, 20)
+        Me.txtpass.Size = New System.Drawing.Size(185, 20)
         Me.txtpass.TabIndex = 5
         '
         'frmlogin

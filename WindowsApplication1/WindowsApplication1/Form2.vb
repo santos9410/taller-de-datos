@@ -55,4 +55,19 @@
 
 
     End Sub
+
+    Private Sub RestaurarToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles RestaurarToolStripMenuItem.Click
+        frmRestaurar.Show()
+
+    End Sub
+
+    Private Sub RealizarRespaldoToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles RealizarRespaldoToolStripMenuItem.Click
+        frmRespaldo.Show()
+
+    End Sub
+
+    Private Sub CrearUsuariosToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles CrearUsuariosToolStripMenuItem.Click
+        Frmusuarios.Show()
+
+    End Sub
 End Class

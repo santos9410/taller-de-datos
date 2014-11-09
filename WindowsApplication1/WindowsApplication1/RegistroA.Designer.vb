@@ -44,7 +44,7 @@ Partial Class frmRegistroA
         '
         Me.btnguardar.BackColor = System.Drawing.Color.Blue
         Me.btnguardar.ForeColor = System.Drawing.Color.White
-        Me.btnguardar.Location = New System.Drawing.Point(309, 324)
+        Me.btnguardar.Location = New System.Drawing.Point(33, 324)
         Me.btnguardar.Name = "btnguardar"
         Me.btnguardar.Size = New System.Drawing.Size(117, 24)
         Me.btnguardar.TabIndex = 1
@@ -53,7 +53,7 @@ Partial Class frmRegistroA
         '
         'Button1
         '
-        Me.Button1.Location = New System.Drawing.Point(455, 324)
+        Me.Button1.Location = New System.Drawing.Point(365, 324)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(120, 24)
         Me.Button1.TabIndex = 2
@@ -63,18 +63,18 @@ Partial Class frmRegistroA
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(110, 13)
+        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.Location = New System.Drawing.Point(29, 13)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(70, 24)
+        Me.Label1.Size = New System.Drawing.Size(102, 24)
         Me.Label1.TabIndex = 3
-        Me.Label1.Text = "Control"
+        Me.Label1.Text = "No. control"
         '
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.Location = New System.Drawing.Point(110, 52)
+        Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label2.Location = New System.Drawing.Point(29, 52)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(79, 24)
         Me.Label2.TabIndex = 4
@@ -83,8 +83,8 @@ Partial Class frmRegistroA
         'Label3
         '
         Me.Label3.AutoSize = True
-        Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label3.Location = New System.Drawing.Point(110, 94)
+        Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label3.Location = New System.Drawing.Point(29, 94)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(87, 24)
         Me.Label3.TabIndex = 5
@@ -93,8 +93,8 @@ Partial Class frmRegistroA
         'Label4
         '
         Me.Label4.AutoSize = True
-        Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label4.Location = New System.Drawing.Point(110, 137)
+        Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label4.Location = New System.Drawing.Point(29, 137)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(87, 24)
         Me.Label4.TabIndex = 6
@@ -103,8 +103,8 @@ Partial Class frmRegistroA
         'Label5
         '
         Me.Label5.AutoSize = True
-        Me.Label5.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label5.Location = New System.Drawing.Point(110, 179)
+        Me.Label5.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label5.Location = New System.Drawing.Point(29, 179)
         Me.Label5.Name = "Label5"
         Me.Label5.Size = New System.Drawing.Size(54, 24)
         Me.Label5.TabIndex = 7
@@ -113,8 +113,8 @@ Partial Class frmRegistroA
         'Label6
         '
         Me.Label6.AutoSize = True
-        Me.Label6.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label6.Location = New System.Drawing.Point(110, 259)
+        Me.Label6.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label6.Location = New System.Drawing.Point(29, 258)
         Me.Label6.Name = "Label6"
         Me.Label6.Size = New System.Drawing.Size(63, 24)
         Me.Label6.TabIndex = 8
@@ -122,44 +122,44 @@ Partial Class frmRegistroA
         '
         'txtcontrol
         '
-        Me.txtcontrol.Location = New System.Drawing.Point(231, 13)
+        Me.txtcontrol.Location = New System.Drawing.Point(169, 13)
         Me.txtcontrol.Name = "txtcontrol"
-        Me.txtcontrol.Size = New System.Drawing.Size(254, 20)
+        Me.txtcontrol.Size = New System.Drawing.Size(316, 20)
         Me.txtcontrol.TabIndex = 9
         '
         'txtnombre
         '
-        Me.txtnombre.Location = New System.Drawing.Point(231, 57)
+        Me.txtnombre.Location = New System.Drawing.Point(169, 57)
         Me.txtnombre.Name = "txtnombre"
-        Me.txtnombre.Size = New System.Drawing.Size(254, 20)
+        Me.txtnombre.Size = New System.Drawing.Size(316, 20)
         Me.txtnombre.TabIndex = 10
         '
         'txtdomicilio
         '
-        Me.txtdomicilio.Location = New System.Drawing.Point(231, 99)
+        Me.txtdomicilio.Location = New System.Drawing.Point(169, 99)
         Me.txtdomicilio.Name = "txtdomicilio"
-        Me.txtdomicilio.Size = New System.Drawing.Size(254, 20)
+        Me.txtdomicilio.Size = New System.Drawing.Size(316, 20)
         Me.txtdomicilio.TabIndex = 11
         '
         'txtIdciudad
         '
-        Me.txtIdciudad.Location = New System.Drawing.Point(231, 141)
+        Me.txtIdciudad.Location = New System.Drawing.Point(169, 141)
         Me.txtIdciudad.Name = "txtIdciudad"
-        Me.txtIdciudad.Size = New System.Drawing.Size(254, 20)
+        Me.txtIdciudad.Size = New System.Drawing.Size(316, 20)
         Me.txtIdciudad.TabIndex = 12
         '
         'txtsexo
         '
-        Me.txtsexo.Location = New System.Drawing.Point(231, 183)
+        Me.txtsexo.Location = New System.Drawing.Point(169, 183)
         Me.txtsexo.Name = "txtsexo"
-        Me.txtsexo.Size = New System.Drawing.Size(254, 20)
+        Me.txtsexo.Size = New System.Drawing.Size(316, 20)
         Me.txtsexo.TabIndex = 13
         '
         'Label7
         '
         Me.Label7.AutoSize = True
-        Me.Label7.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label7.Location = New System.Drawing.Point(110, 222)
+        Me.Label7.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label7.Location = New System.Drawing.Point(29, 219)
         Me.Label7.Name = "Label7"
         Me.Label7.Size = New System.Drawing.Size(55, 24)
         Me.Label7.TabIndex = 14
@@ -167,23 +167,23 @@ Partial Class frmRegistroA
         '
         'txtedad
         '
-        Me.txtedad.Location = New System.Drawing.Point(231, 224)
+        Me.txtedad.Location = New System.Drawing.Point(169, 224)
         Me.txtedad.Name = "txtedad"
-        Me.txtedad.Size = New System.Drawing.Size(254, 20)
+        Me.txtedad.Size = New System.Drawing.Size(316, 20)
         Me.txtedad.TabIndex = 15
         '
         'txtgrupo
         '
-        Me.txtgrupo.Location = New System.Drawing.Point(231, 263)
+        Me.txtgrupo.Location = New System.Drawing.Point(169, 263)
         Me.txtgrupo.Name = "txtgrupo"
-        Me.txtgrupo.Size = New System.Drawing.Size(254, 20)
+        Me.txtgrupo.Size = New System.Drawing.Size(316, 20)
         Me.txtgrupo.TabIndex = 16
         '
         'frmRegistroA
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(615, 377)
+        Me.ClientSize = New System.Drawing.Size(511, 376)
         Me.Controls.Add(Me.txtgrupo)
         Me.Controls.Add(Me.txtedad)
         Me.Controls.Add(Me.Label7)
